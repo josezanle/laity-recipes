@@ -1,65 +1,120 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from "next/link";
 
-export default function Home() {
+const index = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+    <div className="body">
+      <span className="box">
+        <div className="top">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="seedling"
+            class="svg-inline--fa fa-seedling fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <path
+              fill="currentColor"
+              d="M64 96H0c0 123.7 100.3 224 224 224v144c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V320C288 196.3 187.7 96 64 96zm384-64c-84.2 0-157.4 46.5-195.7 115.2 27.7 30.2 48.2 66.9 59 107.6C424 243.1 512 147.9 512 32h-64z"
+            ></path>
+          </svg>
+          <h2 className="animate__animated animate__slideInDown animate__delay-1s">
+            Laity
+          </h2>
+          <p className="animate__animated animate__slideInLeftt animate__delay-2s">
+            Una App de recetas nutritivas
+          </p>
         </div>
-      </main>
+        <div className="bottom">
+          <button>
+            <Link href="/bienvenido">
+              <a>Ingresar</a>
+            </Link>
+          </button>
+        </div>
+      </span>
+      <style jsx>{`
+        .body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100vh;
+          background-image: linear-gradient(
+              to bottom,
+              rgb(6, 19, 22),
+              rgba(223, 231, 236, 0.1)
+            ),
+            url(/images/1.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        .box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column;
+          width: 300px;
+          height: 400px;
+        }
+        .top,
+        .bottom {
+          width: 100%;
+          height: 100%;
+          display: flex;
+        }
+        .top {
+          flex: 2;
+          justify-content: flex-end;
+          align-items: center;
+          flex-flow: column;
+        }
+        .bottom {
+          flex: 1;
+          justify-content: center;
+          align-items: flex-end;
+        }
+
+        svg {
+          width: 60px;
+          height: 60px;
+          color: white;
+        }
+        a {
+          color: silver;
+        }
+        a:hover {
+          color: white;
+        }
+        p,
+        h2 {
+          color: white;
+        }
+        p {
+          font-weight: 100;
+        }
+
+        button {
+          background: #000;
+          padding: 0.5em 1.2em;
+          border-radius: 0.5em;
+          box-shadow: 3px 3px 5px rgb(43, 33, 33);
+          outline: none;
+          border: none;
+          color: silver;
+        }
+
+        button:hover {
+          cursor: pointer;
+          background: rgb(19, 19, 19);
+        }
+      `}</style>
     </div>
-  )
-}
+  );
+};
+
+export default index;
