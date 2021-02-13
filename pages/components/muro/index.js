@@ -1,13 +1,9 @@
-import Navigation from "../navigation";
-import Muro from "../muro";
-
-const MainScreen = () => {
+const Muro = () => {
   return (
-    <div className="main-screen">
-      <Navigation />
-      <Muro />
+    <div className="muro">
+      <h3>hola desde muro soy scrollable y mostrare varios componentes</h3>
       <style jsx>{`
-        .main-screen {
+        .muro {
           width: 100%;
           height: 100%;
           flex: 8;
@@ -15,7 +11,7 @@ const MainScreen = () => {
           justify-content: center;
           align-items: center;
           flex-flow: column;
-          background: yellow;
+          background: pink;
         }
         h3 {
           color: black;
@@ -25,4 +21,4 @@ const MainScreen = () => {
   );
 };
 
-export default MainScreen;
+export default Muro;

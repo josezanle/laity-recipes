@@ -1,9 +1,15 @@
+import Menu from "./menu";
+import SearchInput from "./search-input";
+
 const Navigation = () => {
   return (
     <div className="navigation">
-      <h4>Hola desde navigation</h4>
+      <Menu />
+      <SearchInput />
+
       <style jsx>{`
         .navigation {
+          display: flex;
           width: 100%;
           height: 50px;
           background: aqua;
