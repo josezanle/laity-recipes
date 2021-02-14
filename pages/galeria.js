@@ -1,10 +1,14 @@
 import Layout from "../layout";
+import MainScreen from "./components/main-screen";
 
 const Galeria = () => {
   return (
-    <Layout>
-      <h4>hola desde galeria</h4>
-    </Layout>
+    <div>
+      <Layout />
+      <MainScreen>
+        <h3>HOLA DESDE EL COMPONENTE SCROLLABLE</h3>
+      </MainScreen>
+    </div>
   );
 };
 

@@ -10,20 +10,26 @@ const Menu = () => {
       <Link href="/galeria">
         <a>galeria</a>
       </Link>
+      <Link href="/galeria">
+        <a>galeria</a>
+      </Link>
+      <Link href="/galeria">
+        <a>galeria</a>
+      </Link>
 
       <style jsx>{`
         .menu {
-          flex: 7;
+          flex: 6;
           width: 100%;
           height: 100%;
           display: flex;
-          justify-content: center;
           align-items: center;
-          background: white;
         }
         a {
-          margin: 0 5px;
-          color: black;
+          margin: 0 1em;
+          color: aqua;
+          font-weight: 900;
+          font-size: 1.5em;
         }
       `}</style>
     </div>

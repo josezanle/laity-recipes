@@ -15,7 +15,8 @@ const MainScreen = () => {
           justify-content: center;
           align-items: center;
           flex-flow: column;
-          background: yellow;
+          background: #ebebeb;
+          border-radius: 1em;
         }
         h3 {
           color: black;

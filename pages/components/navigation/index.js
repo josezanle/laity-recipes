@@ -11,8 +11,8 @@ const Navigation = () => {
         .navigation {
           display: flex;
           width: 100%;
-          height: 50px;
-          background: aqua;
+          background: white;
+          padding: 1em;
         }
         h3 {
           color: black;

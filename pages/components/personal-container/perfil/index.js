@@ -1,19 +1,15 @@
-import PersonalContainer from "../personal-container";
-
-const Muro = () => {
+const Perfil = () => {
   return (
-    <div className="muro">
-      <PersonalContainer />
+    <div className="perfil">
       <style jsx>{`
         .muro {
+          flex: 4;
           width: 100%;
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          flex-flow: column;
-          background: yellow;
-          overflow-y: scroll;
+          background: violet;
         }
         h3 {
           color: black;
@@ -23,4 +19,4 @@ const Muro = () => {
   );
 };
 
-export default Muro;
+export default Perfil;
