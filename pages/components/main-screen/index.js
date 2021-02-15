@@ -1,11 +1,11 @@
 import Navigation from "../navigation";
 import Muro from "../muro";
 
-const MainScreen = () => {
+const MainScreen = ({ children }) => {
   return (
     <div className="main-screen">
       <Navigation />
-      <Muro />
+      <Muro>{children}</Muro>
       <style jsx>{`
         .main-screen {
           width: 100%;
