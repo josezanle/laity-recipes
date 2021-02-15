@@ -1,5 +1,5 @@
-import Login from "./components/login";
-import Laity from "./components/laity";
+import Login from "../components/login";
+import Laity from "../components/laity";
 
 const Home = () => {
   return (
