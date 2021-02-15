@@ -1,9 +1,9 @@
 import PersonalContainer from "../personal-container";
 
-const Muro = () => {
+const Muro = ({ children }) => {
   return (
     <div className="muro">
-      <PersonalContainer />
+      <PersonalContainer>{children}</PersonalContainer>
       <style jsx>{`
         .muro {
           width: 100%;

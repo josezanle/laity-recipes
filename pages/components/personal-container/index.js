@@ -1,9 +1,10 @@
 import Perfil from "./perfil";
 import Clima from "./clima";
 
-const PersonalContainer = () => {
+const PersonalContainer = ({children}) => {
   return (
     <div className="personal">
+      {children}
       <Perfil />
       <Clima />
       <style jsx>{`
